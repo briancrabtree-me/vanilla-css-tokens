@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>vanilla-css-tokens — layout example</title>
+  <!-- Inline backup if CDN is blocked; override :root in your project to customize -->
+  <style>
+    :root {
+      --bg-main: 10 10 10;
+      --bg-surface: 18 18 18;
+      --text-main: 240 240 240;
+      --text-dim: 190 190 190;
+      --accent: 204 255 0;
+      --on-accent: 10 10 10;
+      --border: 40 40 40;
+      --gap-xs: 8px;
+      --gap-sm: 12px;
+      --gap-md: 18px;
+      --gap-lg: 24px;
+      --gap-xl: 32px;
+      --gap-2xl: 48px;
+      --container-pad: 24px;
+      --section-pad-y: 48px;
+      --footer-pad: 24px;
+      --nav-h: 56px;
+      --max-w: 960px;
+      --font-sans: system-ui, sans-serif;
+      --text-sm: 13px;
+      --text-base: 16px;
+      --text-md: 17px;
+      --text-lg: 22px;
+      --text-hero: clamp(36px, 7vw, 72px);
+      --leading-tight: 1;
+      --leading-normal: 1.5;
+      --z-header: 10;
+      --radius-none: 0;
+      --color-focus: 204 255 0;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/briancrabtree-me/vanilla-css-tokens@main/tokens.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/briancrabtree-me/vanilla-css-tokens@main/ui.css" />
+  <!-- Offline clone: ../tokens.css and ../ui.css -->
+</head>
+<body>
+  <header class="ui-header">
+    <nav class="ui-nav" aria-label="Primary">
+      <a class="ui-brand" href="#">Demo<em>.</em>ui</a>
+      <ul class="ui-nav-links">
+        <li><a href="#" aria-current="page">Home</a></li>
+        <li><a href="#blocks">Blocks</a></li>
+        <li><a href="https://github.com/briancrabtree-me/vanilla-css-tokens">GitHub</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="ui-main">
+    <section class="ui-hero" aria-labelledby="hero-title">
+      <h1 id="hero-title" class="ui-hero-title">Acid-on-dark.<em>Plain CSS.</em></h1>
+      <p class="ui-hero-lead">
+        Custom properties plus optional layout classes. Works in any HTML or app — override <code>:root</code> to customize colors.
+      </p>
+      <div class="ui-hero-cta">
+        <a class="ui-btn ui-btn-primary" href="https://github.com/briancrabtree-me/vanilla-css-tokens/blob/main/tokens.css">tokens.css</a>
+        <a class="ui-btn" href="https://github.com/briancrabtree-me/vanilla-css-tokens/blob/main/ui.css">ui.css</a>
+      </div>
+    </section>
+
+    <section id="blocks" aria-labelledby="blocks-title" style="margin-top: var(--section-pad-y)">
+      <h2 id="blocks-title" class="ui-section-title">Blocks</h2>
+      <div class="ui-grid">
+        <article class="ui-card">
+          <h3>Tokens</h3>
+          <p>RGB channel variables for surfaces, type, accent, and spacing.</p>
+        </article>
+        <article class="ui-card">
+          <h3>Header</h3>
+          <p>Sticky bar with brand and inline nav links.</p>
+        </article>
+        <article class="ui-card">
+          <h3>Footer</h3>
+          <p>Simple top border and centered secondary text.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ui-footer">
+    <p>vanilla-css-tokens — MIT</p>
+  </footer>
+</body>
+</html>

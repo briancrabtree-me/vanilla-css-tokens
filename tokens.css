@@ -1,0 +1,55 @@
+/* Acid-on-dark design tokens. RGB channels so you can write rgb(var(--token)) or rgba(var(--token), 0.5). */
+:root {
+  /* Surfaces */
+  --bg-main: 10 10 10;
+  --bg-surface: 18 18 18;
+
+  /* Text */
+  --text-main: 240 240 240;
+  --text-dim: 190 190 190;
+
+  /* Accent — acid highlight on dark UI */
+  --accent: 204 255 0;
+  --on-accent: 10 10 10;
+
+  /* Lines */
+  --border: 40 40 40;
+
+  /* Spacing scale */
+  --gap-xs: 8px;
+  --gap-sm: 12px;
+  --gap-md: 18px;
+  --gap-lg: 24px;
+  --gap-xl: 32px;
+  --gap-2xl: 48px;
+
+  /* Page rhythm */
+  --container-pad: var(--gap-lg);
+  --section-pad-y: var(--gap-2xl);
+  --footer-pad: var(--gap-lg);
+
+  /* Layout */
+  --nav-h: 56px;
+  --max-w: 960px;
+
+  /* Typography */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --text-sm: 13px;
+  --text-base: 16px;
+  --text-md: 17px;
+  --text-lg: 22px;
+  --text-hero: clamp(36px, 7vw, 72px);
+  --leading-tight: 1;
+  --leading-normal: 1.5;
+
+  /* Chrome — sticky header sits above page content */
+  --z-header: 10;
+
+  /* Corners — flat brutalist default */
+  --radius-none: 0;
+  --radius-sm: 2px;
+
+  /* Focus and form feedback */
+  --color-focus: 204 255 0;
+  --color-error: 252 165 165;
+}
