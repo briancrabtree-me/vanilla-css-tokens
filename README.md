@@ -1,6 +1,6 @@
 # vanilla-css-tokens
 
-Acid-on-dark CSS custom properties and optional layout primitives. No build step, no utilities framework. Use in **any** HTML page, static site, or framework — not tied to a specific starter.
+Acid-on-dark CSS custom properties and optional layout primitives. No build step, no utilities framework. Use in **any** HTML page, static site, or framework — not tied to a specific starter. README shields use brand hex `#ccff00`.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-ccff00?style=flat-square)](LICENSE)
 [![Example](https://img.shields.io/badge/example-layout.html-ccff00?style=flat-square)](https://github.com/briancrabtree-me/vanilla-css-tokens/blob/main/examples/layout.html)
